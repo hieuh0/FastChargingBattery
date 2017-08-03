@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_layout"
+    tools:context="com.example.fcg.activities.MainActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imgBattery"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_battery" />
+        <ProgressBar
+
+            android:id="@+id/pb"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progressbar"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/imgBattery"
+            android:layout_alignStart="@+id/imgBattery"
+            />
+        <TextView
+            android:id="@+id/txtbattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imgBattery"
+            android:layout_toRightOf="@+id/imgBattery"
+            android:text="50%"
+            android:textColor="@color/whilecolor"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <Switch
+        android:layout_marginTop="20dp"
+        android:id="@+id/mySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:thumb="@drawable/customswitchselector"
+        android:track="@drawable/custom_track" />
+    <TextView
+        android:textSize="30dp"
+        android:textColor="@color/whilecolor"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/loadingmenu1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignBottom="@+id/menu1"
+                    android:layout_alignEnd="@+id/menu1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/menu1"
+                    android:src="@drawable/ic_cricle_loading" />
+                <ImageView
+                    android:padding="10dp"
+                    android:id="@+id/menu1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_batteryicon" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txtMenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/menu1"
+                android:textAlignment="center"
+                android:textColor="@color/whilecolor" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+          <RelativeLayout
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:id="@+id/loading"
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:layout_alignBottom="@+id/menu2"
+                  android:layout_alignEnd="@+id/menu2"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignRight="@+id/menu2"
+                  android:src="@drawable/ic_cricle_loading" />
+              <ImageView
+                  android:padding="10dp"
+                  android:id="@+id/menu2"
+                  android:layout_gravity="center"
+                  android:src="@drawable/ic_clock"
+                  android:layout_width="60dp"
+                  android:layout_height="60dp" />
+          </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtMenu2"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="@string/menu2"
+                android:textColor="@color/whilecolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imagemenu3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignBottom="@+id/menu3"
+                    android:layout_alignEnd="@+id/menu3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/menu3"
+                    android:src="@drawable/ic_cricle_loading" />
+               <!-- <ImageView
+                    android:id="@+id/loadingmenu3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignBottom="@+id/menu3"
+                    android:layout_alignEnd="@+id/menu3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/menu3"
+                    android:src="@drawable/cricle_image" />-->
+                <ImageView
+                    android:padding="10dp"
+                    android:id="@+id/menu3"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_drod"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtmenu3"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="@string/menu3"
+                android:textColor="@color/whilecolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

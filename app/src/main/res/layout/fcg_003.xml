@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_layout">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+    <RelativeLayout
+        android:padding="10dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Screen brightness"
+            android:textColor="@color/whilecolor" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:layout_toStartOf="@+id/imageView1"
+            android:text="50%"
+            android:textColor="@color/whilecolor" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/next" />
+    </RelativeLayout>
+    <View
+        android:background="@color/views"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Screen timeout"
+            android:textColor="@color/whilecolor" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toStartOf="@+id/imageView2"
+            android:text="50%"
+            android:textColor="@color/whilecolor" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/next" />
+    </RelativeLayout>
+    <View
+        android:background="@color/views"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:padding="10dp">
+        <TextView
+            android:textColor="@color/whilecolor"
+            android:text="Sound mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+       <TextView
+           android:textColor="@color/whilecolor"
+           android:layout_marginRight="20dp"
+           android:layout_alignParentRight="true"
+           android:id="@+id/soundmode"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/views"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp">
+        <CheckBox
+            android:textColor="@color/whilecolor"
+            android:buttonTint="@color/whilecolor"
+            android:id="@+id/checkboxwifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="?attr/selectableItemBackground"
+            android:theme="@style/CheckBoxTheme"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:text="Wi-fi" />
+
+    </RelativeLayout>
+    <View
+        android:background="@color/views"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp">
+        <CheckBox
+            android:textColor="@color/whilecolor"
+            android:buttonTint="@color/whilecolor"
+            android:id="@+id/checkboxbluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="?attr/selectableItemBackground"
+            android:theme="@style/CheckBoxTheme"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:text="Bluetooth" />
+    </RelativeLayout>
+    <View
+        android:background="@color/views"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</LinearLayout>

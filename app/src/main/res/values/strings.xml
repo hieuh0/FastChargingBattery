@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FastChargingBattery</string>
+    <string name="expressbattery">Express Battery Charging</string>
+    <string name="startcharging">Fast Charging Start</string>
+
+    <string name="menu1">Fast Charging Waiting</string>
+    <string name="menusub1">Fast Charging Ongoing</string>
+    <string name="menusub2">Fast Charging Finished</string>
+
+    <string name="menu2">Fully Charging Waiting</string>
+    <string name="submenu1">Fully Charging Ongoing</string>
+    <string name="submenu2">Fully Charging Finished</string>
+
+    <string name="menu3">Trickle Charging Waiting</string>
+    <string name="menu3sub">Trickle Charging Ongoing</string>
+    <string name="menu3sub1">Trickle Charging Finished</string>
+
+    <string name="dialogbrightness">Screen brightness</string>
+    <string name="timeout">Screen timeout</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstital">ca-app-pub-3940256099942544/1033173712</string>
+</resources>
